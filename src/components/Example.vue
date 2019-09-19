@@ -22,16 +22,18 @@ import "highlight.js/styles/androidstudio.css";
 import "quill/dist/quill.core.css";
 import "quill/dist/quill.snow.css";
 import "quill/dist/quill.bubble.css";
-// import { quillEditor } from "vue-quill-editor";
-import { quillEditor } from "quill-vue";
+import { QuillEditor } from "quill-vue";
 import "quill-vue/dist/static/css/quill-vue.css";
 
 export default {
   components: {
-    quillEditor
+    QuillEditor
   },
 
   data() {
+    // const src = 'https://lib.sixtyden.com/%E8%BF%BD%E5%85%89%E8%80%85mv.mp4';
+    // const src = 'https://player.youku.com/embed/XMzQ4ODE3NDQ4MA=='; // youku播放地址
+    // const src = 'https://www.youtube.com/watch?v=qI9xIe9KtVU'; // youtube播放地址
     hljs.configure({
       languages: ["javascript", "ruby", "python"]
     });
@@ -46,18 +48,17 @@ export default {
             [{ header: 1 }, { header: 2 }],
             [{ list: "ordered" }, { list: "bullet" }],
             [{ script: "sub" }, { script: "super" }],
-            [{ indent: "-1" }, { indent: "+1" }],
-            [{ direction: "rtl" }],
             [{ size: ["small", false, "large", "huge"] }],
             [{ header: [1, 2, 3, 4, 5, 6, false] }],
             [{ font: [] }],
             [{ color: [] }, { background: [] }],
             [{ align: [] }],
-            ["link", "image", "video", "formula"],
+            ["link", "image", "video-another", "iframe", "vuecomp", "formula"],
             ["clean"]
           ],
           syntax: {
             highlight: text => hljs.highlightAuto(text).value
+            // hljs: text => hljs.highlightAuto(text).value
           }
         }
       }
@@ -66,17 +67,17 @@ export default {
 
   methods: {
     onEditorBlur(editor) {
-      console.log("editor blur!", editor);
+      // console.log("editor blur!", editor);
     },
     onEditorFocus(editor) {
-      console.log("editor focus!", editor);
+      // console.log("editor focus!", editor);
     },
     onEditorChange(editor) {
       console.log("editor change!", editor);
     },
     onEditorReady(editor) {
       this.quill = editor;
-      console.log("editor ready!", editor);
+      // console.log("editor ready!", editor);
     }
   }
 };

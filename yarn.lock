@@ -6623,10 +6623,10 @@ quill-image-resize-module@^3.0.0:
     quill "^1.2.2"
     raw-loader "^0.5.1"
 
-quill-integrated-custom-blot@^1.1.16:
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/quill-integrated-custom-blot/-/quill-integrated-custom-blot-1.1.16.tgz#8e4af8e73f2346be4dedf65a660a3447ad4deddd"
-  integrity sha512-Rr5dbrOZzggp8Q15bJn2VXIMD2ofyB5inZEjbBclyeEB/R3IIhF/QMIhRwURhUmdKH3haE64XKqyvlnIl5VXHg==
+quill-integrated-custom@^1.1.29:
+  version "1.1.29"
+  resolved "https://registry.yarnpkg.com/quill-integrated-custom/-/quill-integrated-custom-1.1.29.tgz#a0b75be55901fe707c4d30080afd6a6db2c17013"
+  integrity sha512-omJND1N5RTr7cwiU1e0i32cALkA8plhjQ2iSRntFEDuNwBEedNQr6UCSjR6WWqU72x77QzcYRi0RwBNZRI86Uw==
   dependencies:
     quill "^1.3.6"
     vue "^2.6.10"
@@ -6638,18 +6638,18 @@ quill-markdown-shortcuts@^0.0.10:
   dependencies:
     quill "^1.3.1"
 
-quill-vue@^1.4.11:
-  version "1.4.11"
-  resolved "https://registry.yarnpkg.com/quill-vue/-/quill-vue-1.4.11.tgz#7661e2e3acd21b62e3b6d5e779379caf0a260a4a"
-  integrity sha512-QrF8LLPkCmNs0P8N7CKmQ8innbeRN7mVJTopKIJMG9Na15sqaTL+LJAF3tpkEGKgJ7jOGheLR1cijc4CB9ZU0Q==
+quill-vue@^1.4.31:
+  version "1.4.31"
+  resolved "https://registry.yarnpkg.com/quill-vue/-/quill-vue-1.4.31.tgz#83fc76fd8bc41a80c25f094a75f939a3e5d78047"
+  integrity sha512-qg0L75F4+Ibwjd1pXL56uMilKxYT8U77vXK5XM7PRkC+Ed7pydSJ7/CpOMdcLP6GsNtIBQK1uTyhSBOD8+1xkQ==
   dependencies:
     quill "^1.3.6"
     quill-image-drop-module "^1.0.3"
     quill-image-resize-module "^3.0.0"
-    quill-integrated-custom-blot "^1.1.16"
+    quill-integrated-custom "^1.1.29"
     quill-markdown-shortcuts "^0.0.10"
 
-quill@^1.2.2, quill@^1.3.1, quill@^1.3.4, quill@^1.3.6:
+quill@^1.2.2, quill@^1.3.1:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/quill/-/quill-1.3.6.tgz#99f4de1fee85925a0d7d4163b6d8328f23317a4d"
   integrity sha512-K0mvhimWZN6s+9OQ249CH2IEPZ9JmkFuCQeHAOQax3EZ2nDJ3wfGh59mnlQaZV2i7u8eFarx6wAtvQKgShojug==
@@ -6658,6 +6658,18 @@ quill@^1.2.2, quill@^1.3.1, quill@^1.3.4, quill@^1.3.6:
     deep-equal "^1.0.1"
     eventemitter3 "^2.0.3"
     extend "^3.0.1"
+    parchment "^1.1.4"
+    quill-delta "^3.6.2"
+
+quill@^1.3.6:
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/quill/-/quill-1.3.7.tgz#da5b2f3a2c470e932340cdbf3668c9f21f9286e8"
+  integrity sha512-hG/DVzh/TiknWtE6QmWAF/pxoZKYxfe3J/d/+ShUWkDvvkZQVTPeVmUJVu1uE6DDooC4fWTiCLh84ul89oNz5g==
+  dependencies:
+    clone "^2.1.1"
+    deep-equal "^1.0.1"
+    eventemitter3 "^2.0.3"
+    extend "^3.0.2"
     parchment "^1.1.4"
     quill-delta "^3.6.2"
 
@@ -8204,14 +8216,6 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
-
-vue-quill-editor@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/vue-quill-editor/-/vue-quill-editor-3.0.6.tgz#1f85646211d68a31a80a72cb7f45bb2f119bc8fb"
-  integrity sha512-g20oSZNWg8Hbu41Kinjd55e235qVWPLfg4NvsLW6d+DhgBTFbEuMpcWlUdrD6qT3+Noim6DRu18VLM9lVShXOQ==
-  dependencies:
-    object-assign "^4.1.1"
-    quill "^1.3.4"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
